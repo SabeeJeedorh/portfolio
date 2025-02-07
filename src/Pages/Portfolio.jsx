@@ -153,10 +153,12 @@ const Portfolio = () => {
               HTML/CSS Website (Static)
             </h3>
             <p className="mt-2 text-white">
-              Built a responsive, static website using HTML5 and CSS3. Focused
-              on clean code, user-friendly design, and mobile responsiveness.
-              Implemented modern CSS techniques like flexbox and grid for layout
-              design.
+              Built a responsive, static website using HTML5 and CSS3.
+              <p className="mt-3 font-bold">
+                Skilled Learned: Focused on clean code, user-friendly design,
+                and mobile responsiveness. Implemented modern CSS techniques
+                like flexbox and grid for layout design.{" "}
+              </p>
             </p>
             <a
               href="assignment-sabeea.netlify.app"
@@ -183,7 +185,7 @@ const Portfolio = () => {
               design and user interface replication.{" "}
             </p>
             <br />
-            <h2 className="font-bold mt-3">
+            <h2 className="font-bold mt-3 text-white">
               {" "}
               Technologies Used: HTML5, CSS3, JavaScript, React.js, Tailwind
               CSS.{" "}
