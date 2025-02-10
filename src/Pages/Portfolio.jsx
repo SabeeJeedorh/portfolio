@@ -32,7 +32,7 @@ const Portfolio = () => {
         darkMode ? "bg-black text-white" : "bg-white text-black font-serif"
       }`}
     >
-      {/* Dark Mode Toggle Button */}
+     
       <div className="absolute top-6 right-6">
         <FaMoon
           onClick={() => setDarkMode(!darkMode)}
@@ -42,7 +42,6 @@ const Portfolio = () => {
         />
       </div>
 
-      {/* Header Section */}
       <header className="text-center mt-10">
         <motion.div
           className="flex flex-col items-center justify-center"
@@ -74,7 +73,6 @@ const Portfolio = () => {
         </motion.div>
       </header>
 
-      {/* About Me Section */}
       <section className="mt-10 w-full max-w-4xl">
         <motion.h2
           className="text-2xl font-semibold border-b-4 border-orange-500 pb-2 text-orange-500"
@@ -97,7 +95,6 @@ const Portfolio = () => {
         </motion.p>
       </section>
 
-      {/* Projects Section */}
       <section className="mt-10 w-full max-w-4xl">
         <motion.h2
           className="text-2xl font-semibold border-b-4 border-orange-500 pb-2 text-orange-500"
@@ -134,7 +131,7 @@ const Portfolio = () => {
               </ul>
             </p>
             <a
-              href="sabeeastodoapp.netlify.app"
+              href="Https://sabeeastodoapp.netlify.app/"
               className="text-orange-500 hover:underline mt-2 inline-block"
             >
               View Project
@@ -161,7 +158,7 @@ const Portfolio = () => {
               </p>
             </p>
             <a
-              href="assignment-sabeea.netlify.app"
+              href="Https://assignment-sabeea.netlify.app/"
               className="text-orange-500 hover:underline mt-2 inline-block"
             >
               View Project
@@ -195,7 +192,7 @@ const Portfolio = () => {
               implemented dynamic content loading */}
 
             <a
-              href="wakf-clone.netlify.app"
+              href="Https://wakf-clone.netlify.app/"
               className="text-orange-500 hover:underline mt-2 inline-block"
             >
               View Project
@@ -204,7 +201,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* CV Download Section */}
       <section className="mt-10 w-full max-w-4xl">
         <h2 className="text-xl text-orange-500 font-bold">Checkout my Cv</h2>
 
@@ -226,7 +222,6 @@ const Portfolio = () => {
         </motion.a>
       </section>
 
-      {/* Contact Section */}
       <section className="mt-10 w-full max-w-4xl">
         <motion.h2
           className="text-2xl font-semibold border-b-4 border-orange-500 pb-2 text-orange-500"
