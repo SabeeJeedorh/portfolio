@@ -69,7 +69,6 @@ const Portfolio = () => {
             Front-End Developer | React & Tailwind Enthusiast
           </motion.p>
 
-          {/* {`p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ${darkMode ? "bg-gray-800" : "bg-red-700"}`} */}
         </motion.div>
       </header>
 
@@ -210,7 +209,7 @@ const Portfolio = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 3.5 }}
         >
-          {/* Download My CV */}
+         
         </motion.h2>
 
         <motion.a
