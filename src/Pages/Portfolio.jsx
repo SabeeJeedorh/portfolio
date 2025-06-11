@@ -97,8 +97,8 @@ const Portfolio = () => {
       description:
         "Roots n Routes is a travel web app built with Next.js 15, TypeScript, React 19, and Tailwind CSS, focused on exploring African destinations. It features user authentication (with test user setup), a partially working accommodation flow, and ongoing development on vendor and city pages. The app uses shadcn/ui components, React Context for auth state, and follows a file-based routing structure. Key sections include destinations, experiences, user profiles, a blog, and a vendor portal. Styling is handled with Tailwind and custom UI components, with plans to improve layout and visual consistency.",
       skills:
-        "Hnads on project",
-      link: "./",
+        "Hands on project",
+      link: "https://github.com/Roots-n-Routes/frontend",
       technologies: ["Nextjs", "Tailwind CSS", "JavaScript"],
       image: roots,
     },
