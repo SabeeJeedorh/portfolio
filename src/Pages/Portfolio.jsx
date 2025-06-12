@@ -13,14 +13,12 @@ import mypic2 from "../assets/mypic2.png";
 import todo from "../assets/todo.png";
 import wakf from "../assets/wakf.png";
 import roots from "../assets/roots.png";
-
-import staticSite from "../assets/static-site.png"; // Added import for static site image
+import staticSite from "../assets/static-site.png";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  // Skills data
   const skills = [
     { name: "React.js", level: 60 },
     { name: "Next js", level: 60 },
@@ -30,7 +28,6 @@ const Portfolio = () => {
     { name: "Responsive Design", level: 90 },
   ];
 
-  // Handle dark mode
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode");
     if (savedMode === "true") {
@@ -43,7 +40,6 @@ const Portfolio = () => {
     document.body.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
-  // Handle scroll to top button visibility
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 300);
@@ -60,7 +56,6 @@ const Portfolio = () => {
     });
   };
 
-  // Project data for cleaner code
   const projects = [
     {
       title: "Todo Web Application",
@@ -80,7 +75,7 @@ const Portfolio = () => {
         "Clean code architecture, user-friendly design, mobile responsiveness, CSS flexbox and grid",
       link: "https://assignment-sabeea.netlify.app/",
       technologies: ["HTML5", "CSS3", "JavaScript"],
-      image: staticSite, // Using the imported static site image
+      image: staticSite,
     },
     {
       title: "Wakf Website Clone",
@@ -96,19 +91,17 @@ const Portfolio = () => {
       title: "RootsnRoutes",
       description:
         "Roots n Routes is a travel web app built with Next.js 15, TypeScript, React 19, and Tailwind CSS, focused on exploring African destinations. It features user authentication (with test user setup), a partially working accommodation flow, and ongoing development on vendor and city pages. The app uses shadcn/ui components, React Context for auth state, and follows a file-based routing structure. Key sections include destinations, experiences, user profiles, a blog, and a vendor portal. Styling is handled with Tailwind and custom UI components, with plans to improve layout and visual consistency.",
-      skills:
-        "Hands on project",
+      skills: "Hands on project",
       link: "https://github.com/Roots-n-Routes/frontend",
       technologies: ["Nextjs", "Tailwind CSS", "JavaScript"],
       image: roots,
     },
   ];
 
-  // Updated color scheme
   const colors = {
-    primary: "teal-600", // Main brand color
-    secondary: "indigo-700", // Secondary accent color
-    accent: "amber-500", // Accent for highlights
+    primary: "teal-600", 
+    secondary: "indigo-700", 
+    accent: "amber-500", 
     light: {
       bg: "white",
       secondaryBg: "gray-50",
@@ -142,15 +135,16 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h2 className="text-2xl font-bold font-sanserif border-white transition-transform duration-300 hover:scale-105">
             <span className={`text-${colors.primary}`}>Sabee</span>
-            <span className={`${darkMode ? `text-amber-50` : `text-black`}`}>
-              {/* darkMode
-                  ? `text-red-500`
-                  : `text-${colors.light.text} font-serif` */}
+            <span className={`${darkMode ? `text-gray-500` : `text-black`}`}>
               tech
             </span>
           </h2>
 
-          <div className="flex items-center space-x-6 text-relative">
+          <div
+            className={`flex items-center space-x-6 text-relative ${
+              darkMode ? `text-gray-500` : `text-black`
+            }`}
+          >
             <a
               href="./"
               className={`hidden md:inline-block hover:text-${colors.primary} transition-colors hover:text-gray-700 
@@ -210,14 +204,20 @@ const Portfolio = () => {
       >
         <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-            <h1 className=" text-black text-4xl md:text-5xl font-bold mb-4">
+            <h1
+              className={` p className=" text-black text-4xl md:text-5xl font-bold mb-4""
+"  ${darkMode ? " text-gray-500" : " text-black "}            `}
+            >
               Hello, I'm {""}
-              <span className={`${darkMode ? `text-amber-50` : `text-black`}`}>
+              <span className={`${darkMode ? `text-black` : `text-black`}`}>
                 Sabia
               </span>
             </h1>
 
-            <p className="text-4xl md:text-3xl mb-6 opacity-90 text-black font-serif font-bold">
+            <p
+              className={` p className=" text-4xl md:text-3xl mb-6 opacity-90 text-black font-serif font-bold"
+"  ${darkMode ? " text-gray-500" : " text-black "}            `}
+            >
               I'm a Front-End Developer
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 ">
@@ -270,13 +270,22 @@ const Portfolio = () => {
                 : `bg-${colors.light.cardBg}`
             }`}
           >
-            <p className="text-lg leading-relaxed mb-6">
+            <p
+              className={` p className="text-lg leading-relaxed mb-6"  ${
+                darkMode ? " text-gray-500" : " text-black "
+              }            `}
+            >
               I am a passionate front-end developer with experience in building
               interactive and user-friendly web applications. My focus is on
               creating efficient and scalable web solutions using modern
               technologies like React and Tailwind CSS.
             </p>
-            <p className="text-lg leading-relaxed">
+
+            <p
+              className={` p className="text-lg leading-relaxed mb-6"  ${
+                darkMode ? " text-gray-500" : " text-black "
+              }            `}
+            >
               With a keen eye for detail and a commitment to writing clean,
               maintainable code, I strive to deliver high quality web
               experiences that meet both user needs and business goals. I'm
@@ -309,7 +318,15 @@ const Portfolio = () => {
                 }`}
               >
                 <div className="flex justify-between mb-2">
-                  <span className="font-semibold">{skill.name}</span>
+                  <span
+                    className={`font-semibold ${
+                      darkMode ? `text-gray-500` : `text-black`
+                    }`}
+                  >
+                    {" "}
+                    {skill.name}
+                  </span>
+
                   <span className={`text-${colors.primary}`}>
                     {skill.level}%
                   </span>
@@ -342,9 +359,7 @@ const Portfolio = () => {
               <div
                 key={index}
                 className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${
-                  darkMode
-                    ? `bg-${colors.dark.cardBg}`
-                    : `bg-${colors.light.cardBg}`
+                  darkMode ? `text-gray-500` : `text-black`
                 }`}
               >
                 <div className="h-48 overflow-hidden">
@@ -392,8 +407,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-{/* collaborative projects */}
-     
 
       {/* Contact Section */}
       <section
@@ -418,7 +431,12 @@ const Portfolio = () => {
                 <h3 className="text-xl font-semibold mb-4">
                   Contact Information
                 </h3>
-                <p className="mb-6">
+
+                <p
+                  className={`mb-6 ${
+                    darkMode ? `text-gray-500` : `text-black`
+                  }`}
+                >
                   I'm currently open to freelance opportunities and
                   collaborations. Feel free to reach out if you'd like to work
                   together!
@@ -445,7 +463,9 @@ const Portfolio = () => {
                     className={`text-${colors.primary} hover:text-${colors.secondary} transition-colors`}
                     aria-label="GitHub Profile"
                   >
-                    <FaGithub />
+                    <FaGithub
+                      className={`${darkMode ? `text-gray-500` : `text-black`}`}
+                    />{" "}
                   </a>
                   <a
                     href="https://www.linkedin.com/in/sabee-a-jeedorh-689141315"
@@ -454,7 +474,9 @@ const Portfolio = () => {
                     className={`text-${colors.primary} hover:text-${colors.secondary} transition-colors`}
                     aria-label="LinkedIn Profile"
                   >
-                    <FaLinkedin />
+                    <FaLinkedin
+                      className={`${darkMode ? `text-gray-500` : `text-black`}`}
+                    />{" "}
                   </a>
                   <a
                     href="https://x.com/a_sabee"
@@ -463,7 +485,9 @@ const Portfolio = () => {
                     className={`text-${colors.primary} hover:text-${colors.secondary} transition-colors`}
                     aria-label="Twitter Profile"
                   >
-                    <FaTwitter />
+                    <FaTwitter
+                      className={`${darkMode ? `text-gray-500` : `text-black`}`}
+                    />
                   </a>
                 </div>
               </div>
@@ -481,17 +505,23 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 md:px-6 text-center">
           <p>
             © {new Date().getFullYear()} Sabee
-            <span className={`${darkMode ? `text-amber-50` : `text-black`}`}>
+            <span className={`${darkMode ? `text-gray-500` : `text-black`}`}>
               tech
             </span>
             . All rights reserved.
           </p>
-          <p className="mt-2 text-sm opacity-75">
+
+          <p
+            className={`mt-2 text-sm opacity-75 ${
+              darkMode ? `text-gray-500` : `text-black`
+            }`}
+          >
             Front-End Developer | React & Tailwind CSS Specialist
           </p>
         </div>
       </footer>
-      {/* Scroll to top button */}
+      
+      
       {showScrollTop && (
         <button
           onClick={scrollToTop}
