@@ -83,7 +83,7 @@ Replace images in the assets/ folder.
 Update the resume link and contact details as needed.
 
 
-✅ Deployment
+Deployment
 You can deploy this portfolio using platforms like Netlify, Vercel, or GitHub Pages. For example, to deploy to Netlify:
 
 Push your code to GitHub
