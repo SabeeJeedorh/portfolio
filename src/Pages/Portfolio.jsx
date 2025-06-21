@@ -9,7 +9,7 @@ import {
   FaChevronUp,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import mypic2 from "../assets/mypic2.png";
+import mypic from "../assets/mypic.jpg";
 import todo from "../assets/todo.png";
 import wakf from "../assets/wakf.png";
 import roots from "../assets/roots.png";
@@ -243,7 +243,7 @@ const Portfolio = () => {
                 className={`absolute inset-0 rounded-full bg-${colors.accent} opacity-20 transform -rotate-6`}
               ></div>
               <img
-                src={mypic2}
+                src={mypic}
                 alt="Sabia - Front-end Developer"
                 className={`relative z-10 w-full h-full object-cover rounded-full border-2 border-black`}
               />
