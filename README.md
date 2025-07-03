@@ -65,7 +65,7 @@ bash
 Copy
 Edit
 1. Clone the repository
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/SabeeJeedorh/sabeeasportfolio.git
 
 2. Navigate into the project directory
 cd your-portfolio
@@ -98,4 +98,4 @@ Set the publish directory: dist (if using Vite) or build (if using CRA)
 Author
 Sabia Sani Jido
 Front-End Developer | React Enthusiast
- sabeeajeedorh@gmail.com
+sabeeajeedorh@gmail.com
