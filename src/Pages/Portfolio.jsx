@@ -9,9 +9,10 @@ import {
   FaChevronUp,
   FaExternalLinkAlt,
 } from "react-icons/fa";
+
 import mypic from "../assets/mypic.jpg";
 import todo from "../assets/todo.png";
-import wakf from "../assets/wakf.png";
+import litSeek from "../assets/litseek.png";
 import roots from "../assets/roots.png";
 import staticSite from "../assets/static-site.png";
 
@@ -78,14 +79,14 @@ const Portfolio = () => {
       image: staticSite,
     },
     {
-      title: "Wakf Website Clone",
+      title: "Book Finder App",
       description:
-        "Recreation of the Wakf website with enhanced user interface and responsive design across all device sizes.",
+        "Book Finder app helps users search, explore, and discover books with recommendations, recent searches, and interactive features.",
       skills:
-        "UI replication, responsive design patterns, component-based architecture",
-      link: "https://wakf-clone.netlify.app/",
-      technologies: ["React.js", "Tailwind CSS", "JavaScript"],
-      image: wakf,
+        "API, responsive design patterns, component-based architecture",
+      link: "https://https://lit-seek.netlify.app/",
+      technologies: ["Nextjs", "Tailwind CSS", "JavaScript"],
+      image: litSeek,
     },
     {
       title: "RootsnRoutes",
@@ -99,9 +100,9 @@ const Portfolio = () => {
   ];
 
   const colors = {
-    primary: "teal-600", 
-    secondary: "indigo-700", 
-    accent: "amber-500", 
+    primary: "teal-600",
+    secondary: "indigo-700",
+    accent: "amber-500",
     light: {
       bg: "white",
       secondaryBg: "gray-50",
@@ -120,17 +121,15 @@ const Portfolio = () => {
 
   return (
     <div
-      className={`min-h-screen flex flex-col transition-colors duration-300 ${
-        darkMode
-          ? `bg-gray-800`
-          : `bg-${colors.light.bg} text-${colors.light.text}`
-      } font-serif`}
+      className={`min-h-screen flex flex-col transition-colors duration-300 ${darkMode
+        ? `bg-gray-800`
+        : `bg-${colors.light.bg} text-${colors.light.text}`
+        } font-serif`}
     >
       {/* Navigation Bar */}
       <nav
-        className={`sticky top-0 z-999 w-full ${
-          darkMode ? `bg-gray-800` : `bg-white`
-        } shadow-md px-4 md:px-6 py-4`}
+        className={`sticky top-0 z-999 w-full ${darkMode ? `bg-gray-800` : `bg-white`
+          } shadow-md px-4 md:px-6 py-4`}
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h2 className="text-2xl font-bold font-sanserif border-white transition-transform duration-300 hover:scale-105">
@@ -141,9 +140,8 @@ const Portfolio = () => {
           </h2>
 
           <div
-            className={`flex items-center space-x-6 text-relative ${
-              darkMode ? `text-gray-500` : `text-black`
-            }`}
+            className={`flex items-center space-x-6 text-relative ${darkMode ? `text-gray-500` : `text-black`
+              }`}
           >
             <a
               href="./"
@@ -196,11 +194,10 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <header
-        className={`w-full py-24 ${
-          darkMode
-            ? `bg-${colors.secondary}`
-            : `bg-gradient-to-r from-${colors.primary} to-${colors.secondary}`
-        } text-white`}
+        className={`w-full py-24 ${darkMode
+          ? `bg-${colors.secondary}`
+          : `bg-gradient-to-r from-${colors.primary} to-${colors.secondary}`
+          } text-white`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
@@ -255,25 +252,22 @@ const Portfolio = () => {
       {/* About Section */}
       <section
         id="about"
-        className={` mt-10 py-12 ${
-          darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
-        }`}
+        className={` mt-10 py-12 ${darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
+          }`}
       >
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
             <span className={`text-${colors.primary}`}>About</span> Me
           </h2>
           <div
-            className={`p-8 rounded-lg shadow-lg ${
-              darkMode
-                ? `bg-${colors.dark.cardBg}`
-                : `bg-${colors.light.cardBg}`
-            }`}
+            className={`p-8 rounded-lg shadow-lg ${darkMode
+              ? `bg-${colors.dark.cardBg}`
+              : `bg-${colors.light.cardBg}`
+              }`}
           >
             <p
-              className={` p className="text-lg leading-relaxed mb-6"  ${
-                darkMode ? " text-gray-500" : " text-black "
-              }            `}
+              className={` p className="text-lg leading-relaxed mb-6"  ${darkMode ? " text-gray-500" : " text-black "
+                }            `}
             >
               I am a passionate front-end developer with experience in building
               interactive and user-friendly web applications. My focus is on
@@ -282,9 +276,8 @@ const Portfolio = () => {
             </p>
 
             <p
-              className={` p className="text-lg leading-relaxed mb-6"  ${
-                darkMode ? " text-gray-500" : " text-black "
-              }            `}
+              className={` p className="text-lg leading-relaxed mb-6"  ${darkMode ? " text-gray-500" : " text-black "
+                }            `}
             >
               With a keen eye for detail and a commitment to writing clean,
               maintainable code, I strive to deliver high quality web
@@ -299,9 +292,8 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section
         id="skills"
-        className={`py-20 ${
-          darkMode ? `bg-${colors.dark.secondaryBg}` : `bg-${colors.light.bg}`
-        }`}
+        className={`py-20 ${darkMode ? `bg-${colors.dark.secondaryBg}` : `bg-${colors.light.bg}`
+          }`}
       >
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
@@ -311,17 +303,15 @@ const Portfolio = () => {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className={`p-6 rounded-lg shadow-md ${
-                  darkMode
-                    ? `bg-${colors.dark.cardSecondaryBg}`
-                    : `bg-${colors.light.cardSecondaryBg}`
-                }`}
+                className={`p-6 rounded-lg shadow-md ${darkMode
+                  ? `bg-${colors.dark.cardSecondaryBg}`
+                  : `bg-${colors.light.cardSecondaryBg}`
+                  }`}
               >
                 <div className="flex justify-between mb-2">
                   <span
-                    className={`font-semibold ${
-                      darkMode ? `text-gray-500` : `text-black`
-                    }`}
+                    className={`font-semibold ${darkMode ? `text-gray-500` : `text-black`
+                      }`}
                   >
                     {" "}
                     {skill.name}
@@ -346,9 +336,8 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section
         id="projects"
-        className={`py-20 ${
-          darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
-        }`}
+        className={`py-20 ${darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
+          }`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
@@ -358,9 +347,8 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${
-                  darkMode ? `text-gray-500` : `text-black`
-                }`}
+                className={`rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 ${darkMode ? `text-gray-500` : `text-black`
+                  }`}
               >
                 <div className="h-48 overflow-hidden">
                   {/* Project screenshot */}
@@ -410,20 +398,18 @@ const Portfolio = () => {
 
       <section
         id="contact"
-        className={`py-20 ${
-          darkMode ? `bg-${colors.dark.secondaryBg}` : `bg-${colors.light.bg}`
-        }`}
+        className={`py-20 ${darkMode ? `bg-${colors.dark.secondaryBg}` : `bg-${colors.light.bg}`
+          }`}
       >
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">
             <span className={`text-${colors.primary}`}>Get In</span> Touch
           </h2>
           <div
-            className={`p-8 rounded-lg shadow-lg ${
-              darkMode
-                ? `bg-${colors.dark.cardSecondaryBg}`
-                : `bg-${colors.light.cardSecondaryBg}`
-            }`}
+            className={`p-8 rounded-lg shadow-lg ${darkMode
+              ? `bg-${colors.dark.cardSecondaryBg}`
+              : `bg-${colors.light.cardSecondaryBg}`
+              }`}
           >
             <div className="flex flex-col md:flex-row md:space-y-8">
               <div className="md:w-1/2 mb-14 md:mb-0">
@@ -432,9 +418,8 @@ const Portfolio = () => {
                 </h3>
 
                 <p
-                  className={`mb-6 ${
-                    darkMode ? `text-gray-500` : `text-black`
-                  }`}
+                  className={`mb-6 ${darkMode ? `text-gray-500` : `text-black`
+                    }`}
                 >
                   I'm currently open to freelance opportunities and
                   collaborations. Feel free to reach out if you'd like to work
@@ -496,9 +481,8 @@ const Portfolio = () => {
       </section>
 
       <footer
-        className={`py-8 ${
-          darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
-        } border-t ${darkMode ? "border-gray-200" : "border-gray-800"}`}
+        className={`py-8 ${darkMode ? `bg-${colors.dark.bg}` : `bg-${colors.light.secondaryBg}`
+          } border-t ${darkMode ? "border-gray-200" : "border-gray-800"}`}
       >
         <div className="max-w-6xl mx-auto px-4 md:px-6 text-center">
           <p>
@@ -510,16 +494,15 @@ const Portfolio = () => {
           </p>
 
           <p
-            className={`mt-2 text-sm opacity-75 ${
-              darkMode ? `text-gray-500` : `text-black`
-            }`}
+            className={`mt-2 text-sm opacity-75 ${darkMode ? `text-gray-500` : `text-black`
+              }`}
           >
             Front-End Developer | React & Tailwind CSS Specialist
           </p>
         </div>
       </footer>
-      
-      
+
+
       {showScrollTop && (
         <button
           onClick={scrollToTop}
