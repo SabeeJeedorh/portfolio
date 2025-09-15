@@ -84,7 +84,7 @@ const Portfolio = () => {
         "Book Finder app helps users search, explore, and discover books with recommendations, recent searches, and interactive features.",
       skills:
         "API, responsive design patterns, component-based architecture",
-      link: "https://https://lit-seek.netlify.app/",
+      link: "https://lit-seek.netlify.app/",
       technologies: ["Nextjs", "Tailwind CSS", "JavaScript"],
       image: litSeek,
     },
