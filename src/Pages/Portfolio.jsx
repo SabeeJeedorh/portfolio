@@ -12,7 +12,7 @@ import {
 
 import mypic from "../assets/mypic.jpg";
 import todo from "../assets/todo.png";
-import litSeek from "../assets/lits.jpg";
+import litSeek from "../assets/todo.png";
 import roots from "../assets/roots.png";
 import staticSite from "../assets/static-site.png";
 
