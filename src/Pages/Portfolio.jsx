@@ -14,7 +14,7 @@ import mypic from "../assets/mypic.jpg";
 import todo from "../assets/todo.png";
 import roots from "../assets/roots.png";
 import staticSite from "../assets/static-site.png";
-import image3 from "../assets/image.png";
+import image3 from "../assets/todo.png";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
