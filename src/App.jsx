@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Portfolio from './Pages/Portfolio'
-import './App.css'
+// import './App.css'
 
 function App() {
   return (

@@ -14,7 +14,8 @@ import mypic from "../assets/mypic.jpg";
 import todo from "../assets/todo.png";
 import roots from "../assets/roots.png";
 import staticSite from "../assets/static-site.png";
-import litseek from "../assets/litseek.jpeg";
+import book from "../assets/book.jpeg";
+import { hover } from "framer-motion";
 
 const Portfolio = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -86,7 +87,7 @@ const Portfolio = () => {
         "API, responsive design patterns, component-based architecture",
       link: "https://lit-seek.netlify.app/",
       technologies: ["Nextjs", "Tailwind CSS", "JavaScript"],
-      image: litseek,
+      image: book,
     },
     {
       title: "RootsnRoutes",
@@ -133,10 +134,20 @@ const Portfolio = () => {
       >
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h2 className="text-2xl font-bold font-sanserif border-white transition-transform duration-300 hover:scale-105">
-            <span className={`text-${colors.primary}`}>Sabee</span>
-            <span className={`${darkMode ? `text-gray-500` : `text-black`}`}>
-              tech
-            </span>
+            <a
+              href="./"
+              className={`text-${colors.primary}
+              `}
+            >
+
+              Sabee
+              <span className={`${darkMode ? `text-gray-500` : `text-black`}`}>
+                tech
+              </span>
+            </a>
+
+
+
           </h2>
 
           <div
@@ -422,12 +433,12 @@ const Portfolio = () => {
                     }`}
                 >
                   I'm currently open to freelance opportunities and
-                  collaborations. Feel free to reach out if you'd like to work
-                  together!
+                  collaborations. Feel free to reach out if you would like to work
+                  together.
                 </p>
                 <div className="space-y-3">
                   <p className="flex items-center">
-                    <FaEnvelope className={`mr-3 text-${colors.primary}`} />
+                    <FaEnvelope className="mr-3 darkMode ? text-gray-500 : " />
                     <a
                       href="mailto:sabeeajeedorh@gmail.com"
                       className={`hover:text-${colors.primary} transition-colors`}
@@ -508,7 +519,7 @@ const Portfolio = () => {
           onClick={scrollToTop}
           className={`
             fixed bottom-6 right-6 p-3 text-#0000 rounded-full shadow-lg 
-            ${darkMode ? "bg-white text-black" : "bg-black text-amber-50"}
+            ${darkMode ? "bg-white text-black hover:text-white hover:bg-black" : "bg-black text-amber-50 hover:text-black hover:bg-white"}
             
             hover:bg-${colors.secondary} transition-all z-40
             
