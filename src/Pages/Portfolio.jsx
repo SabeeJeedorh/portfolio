@@ -508,7 +508,7 @@ const Portfolio = () => {
             className={`mt-2 text-sm opacity-75 ${darkMode ? `text-gray-500` : `text-black`
               }`}
           >
-            Front-End Developer | React & Tailwind CSS Specialist
+            Front-End Developer
           </p>
         </div>
       </footer>
